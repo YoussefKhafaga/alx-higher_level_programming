@@ -6,12 +6,18 @@
  */
 int check_cycle(listint_t *list)
 {
-	int flag = list->n;
+	listint_t *fast = list;
+	listint_t *slow = list;
 
-	while(list->next)
+	if (!list || !list->next)
 	{
-		list = list->next;
-		if (flag == list->n)
+		return (0);
+	}
+	while(fast && fast && fast->next)
+	{
+		slow = slow->next;
+		fast = fast->next->next;
+		if (fast == slow)
 		{
 			return (1);
 		}
