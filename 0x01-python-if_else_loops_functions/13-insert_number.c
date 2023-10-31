@@ -33,7 +33,7 @@ listint_t *insert_node(listint_t **head, int number)
 		if (!tmp->next && number > tmp->n)
 		{
 			tmp->next = new;
-			return (new);
+			return (tmp->next);
 		}
 		tmp = tmp->next;
 	}
