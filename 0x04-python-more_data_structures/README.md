@@ -25,10 +25,6 @@ Prototypes for functions written in this project:
 | `10-best_score.py`             | `def best_score(a_dictionary):`                                                                           |
 | `11-mutiply_list_map.py`       | `def mutiply_list_map(my_list=[], number=0):`                                                             |
 | `12-roman_to_int.py`           | `def roman_to_int(roman_string):`                                                                         |
-| `100-weight_average.py`        | `def weight_average(my_list=[]):`                                                                         |
-| `101-square_matrix_map.py`     | `def square_matrix_map(matrix=[]):`                                                                       |
-| `102-complex_delete.py`        | `def complex_delete(a_dictionary, value):`                                                                |
-| `103-python.c`                 | <ul><li>`void print_python_list(PyObject *p);`</li><li>`void print_python_bytes(PyObject *p);`</li></ul> |
 
 ## Tasks :page_with_curl:
 
@@ -108,25 +104,3 @@ Prototypes for functions written in this project:
   * [12-roman_to_int.py](./12-roman_to_int.py): Python function that converts a roman numeral to an integer.
   * The function assumes the number will be between 1-3999.
   * If the parameter `roman_string` is not a string or `None`, the function returns `0`.
-
-* **13. Weighted average!**
-  * [100-weight_average.py](./100-weight_average.py): Python function that returns the weighted average of all integers in a list of tuples.
-  * Tuple format: `(<score>, <weight>)`.
-  * If the list is empty - returns `0`.
-  * Without importing modules.
-
-* **14. Squared by using map**
-  * [101-square_matrix_map.py](./101-square_matrix_map.py): Python function that computes the square value of all integers of a matrix using `map`.
-  * The parameter `matrix` is a two-dimensional array.
-  * Returns a new matrix of the same size as `matrix` with each value squared.
-  * The initial matrix is not modified.
-  * Without using loops or importing modules.
-
-* **15. Delete by value**
-  * [102-complex_delete.py](./102-complex_delete.py): Python function that deletes keys with a specific value in a dictionary.
-  * If the value does not exists, the dictionary is not changed.
-  * All keys having the searched value are deleted.
-  * Without importing modules.
-
-* **16. CPython #1: PyBytesObject**
-  * [103-python.c](./103-python.c): C functions that print basic information about Python lists and Python bytes objects.
