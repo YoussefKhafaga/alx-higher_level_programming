@@ -16,10 +16,6 @@ Prototypes for functions written in this project:
 | `4-list_division.py`             | `def list_division(my_list_1, my_list_2, list_length):` |
 | `5-raise_exception.py`           | `def raise_exception():`                                |
 | `6-raise_exception_msg.py`       | `def raise_exception_msg(message=""):`                  |
-| `100-safe_print_integer_err.py`  | `def safe_print_integer_err(value):`                    |
-| `101-safe_function.py`           | `def safe_function(fct, *args):`                        |
-| `102-magic_calculation.py`       | `def magic_calculation(a, b);`                          |
-| `103-python.c`                   | <ul><li>`void print_python_list(PyObject *p);`</li><li>`void print_python_bytes(PyObject *p);`</li><li>`void print_python_float(PyObject *p);`</li></ul> |
 
 ## Tasks :page_with_curl:
 
@@ -66,22 +62,3 @@ Prototypes for functions written in this project:
 * **6. Raise a message**
   * [6-raise_exception_msg.py](./6-raise_exception_msg.py): Python function that raises a name exception with a message.
   * Without importing modules.
-
-* **7. Safe integer print with error message**
-  * [100-safe_print_integer_err.py](./100-safe_print_integer_err.py): Python function that prints an integer with type-checking in `"{:d}".format())` format.
-  * The paramter `value` can be any type.
-  * Returns `True` if `value` was printed correctly (ie. was an integer).
-  * Otherwise, prints an exception error to `stderr` and returns `False`.
-  * Without importing modules.
-
-* **8. Safe function**
-  * [101-safe_function.py](./101-safe_function.py): Python function that executes a function safely.
-  * The function assumes that the parameter `fct` is always a pointer to a function.
-  * Upon success, returns the result of the function.
-  * Otherwise, prints an en exception error to `stderr` and returns `None`.
-
-* **9. ByteCode -> Python #4**
-  * [102-magic_calculation.py](./102-magic_calculation.py): Python function matching exactly a bytecode provided by ALX-Africa.
-
-* **10. CPython #2: PyFloatObject**
-  * [103-python.c](./103-python.c): C functions that print basic information  about Python lists, bytes, and float objects.
