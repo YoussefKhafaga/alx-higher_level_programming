@@ -3,5 +3,6 @@
 """Defines a Rectangle class."""
 
 class Rectangle:
-   pass 
+    """Represent a rectangle."""
+    pass 
 
